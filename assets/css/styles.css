@@ -1,0 +1,70 @@
+div.col-lg-4.col-lg-offset-2.col-md-4.col-sm-4.col-sm-offset-2.col-xs-8.col-xs-offset-0{
+  margin-top:10px;
+}
+
+div.col-lg-12.col-md-12.col-sm-12.col-xs-12{
+  margin-top:10px;
+}
+
+div#fb-profile{
+  max-height:100%;
+}
+
+div.col-lg-4.col-lg-offset-0.col-md-4.col-sm-4.col-sm-offset-1.col-xs-8.col-xs-offset-0{
+  margin-top:10px;
+}
+
+div#size.col-lg-4.col-lg-offset-2.col-md-4.col-sm-4.col-sm-offset-2.col-xs-8.col-xs-offset-0{
+  margin-top:10px;
+}
+
+div.input-group-addon{
+  background-color:rgb(66,103,178);
+  font-size:10px;
+}
+
+div.input-group{
+  padding:70px 10px 20px 20px;
+}
+
+div.container{
+  padding-top:60px;
+}
+
+a.navbar-brand.navbar-link{
+  font-size:20px;
+}
+
+i.fa.fa-facebook-official{
+  font-size:25px;
+}
+img. img-responsive.myCoverPic{
+  width: 200%;
+  height: auto;
+}
+.navbar-default{
+  background-color:#4267b2;
+  border-color:transparent;
+}
+
+body{
+  font-family:"Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size:15px;
+  line-height:1.42857143;
+  color:#565758;
+  background-color:#fefefe;
+}
+
+@media (max-width:767px) {
+  div.row{
+    width:auto;
+    padding:60px 0 40px 100px;
+  }
+}
+
+@media (min-width:768px) {
+  .navbar{
+    border-radius:0px;
+  }
+}
+

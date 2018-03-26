@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FB</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand navbar-link" href="#"><i class="fa fa-facebook-official"></i> <strong>facebook</strong> </a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active" role="presentation"><a href="#"><strong>Home</strong> </a></li>
+                    <li role="presentation"><a href="#"><strong>Logout</strong> </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div id="facebook" align="center">
+            <h1 class="text-center">Welcome to Facebook for Developers</h1>
+            <div>
+                <div class="form-group">
+                    <div class="input-group" style="padding: 60px 20px 0 20px;">
+                        <div class="input-group-addon"><span>API </span></div>
+                        <input class="form-control input-sm" type="text" placeholder="Enter your Facebook API Token here" id="apiid">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-lg-offset-2 col-md-4 col-sm-4 col-sm-offset-2 col-xs-8 col-xs-offset-0">
+                <button class="btn btn-primary" type="button" id="facebookBtn1">Get Profile Info</button>
+            </div>
+            <div class="col-lg-4 col-lg-offset-0 col-md-4 col-sm-4 col-sm-offset-1 col-xs-8 col-xs-offset-0">
+                <button class="btn btn-primary" type="button" id="facebookBtn2">Get News Feed</button>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="photos">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div id="fb-profile"><img class="img-responsive myCoverPic" alt="Cover pic" align="center"><img class="img-responsive myProfilePic fb-image-profile thumbnail" alt="Profile pic" align="left"></div>
+        </div>
+    </div>
+    <div id="Facebookprofile">
+        <div class="row">
+            <div class="col-md-3 col-sm-3 col-xs-3">
+                <nav class="navbar navbar-default" id="sidenav" align="left">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-2"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                        </div>
+                        <div class="collapse navbar-collapse" id="navcol-2">
+                            <ul class="nav navbar-nav">
+                                <li class="active" role="presentation"><a href="#basic" id="click1" class="nav-link js-scroll-trigger">About </a></li>
+                                <li role="presentation"><a href="#work" id="click2" class="nav-link js-scroll-trigger">Work &amp; Education</a></li>
+                                <li role="presentation"><a href="#family" id="click3" class="nav-link js-scroll-trigger">Family &amp; Relationship</a></li>
+                                <li role="presentation"><a href="#contact" id="click4" class="nav-link js-scroll-trigger">Contacts </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                <div id="basic">
+                    <h2><strong>About Me</strong></h2>
+                    <p><strong>First Name : </strong><span id="myFirstName"> </span> </p>
+                    <p><strong>Last Name : </strong><span id="myLastName"> </span> </p>
+                    <p><strong>Full Name : </strong><span id="myName"> </span> </p>
+                    <p><strong>Facebook ID : </strong><span id="myProfileId"> </span> </p>
+                    <p><strong>Gender : </strong><span id="myGender"> </span> </p>
+                    <p><strong>Birthday : </strong><span id="myBirthday"> </span> </p>
+                    <p><strong>Languages : </strong><span id="myLanguage"> </span> </p>
+                    <p><strong>Hometown : </strong><span id="myHomeTown"> </span> </p>
+                    <p><strong>My Quotes : </strong><span id="myQuotes"> </span> </p>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-12">
+                <div id="work">
+                    <h2>Work and Education</h2>
+                    <p><strong>Work : </strong><span id="myWork"> </span> </p>
+                    <p><strong>Education : </strong><span id="myEducation"> </span> </p>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-12">
+                <div id="family">
+                    <h2>Relationship </h2>
+                    <p><strong>Relationship Status : </strong><span id="myRelation"> </span> </p>
+                    <p><strong>Family Members : </strong><span id="myFamily"> </span> </p>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-12">
+                <div id="contact">
+                    <h2>Contacts </h2>
+                    <p><strong>Email : </strong><span id="myEmail"> </span> </p>
+                    <p><strong>Website : </strong><span id="myWebsite"> </span> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div id="Facebookfeed">
+            <section class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="feed1">
+                            <a href="#" id="post1"> </a>
+                            <a href="#" id="photoPost1"> </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="feed2">
+                            <a href="#" id="post2"> </a>
+                            <a href="#" id="photoPost2"> </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="feed3">
+                            <a href="#" id="post3"> </a>
+                            <a href="#" id="photoPost3"> </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="feed4">
+                            <a  id="post4"> </a>
+                            <a  class="photoPost4"> </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="feed5">
+                            <a  id="post5"> </a>
+                            <a  class="photoPost5"> </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="feed6">
+                            <a  id="post6"> </a>
+                            <a  class="photoPost6"> </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="feed7">
+                            <a  id="post7"> </a>
+                            <a  class="photoPost7"> </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="feed8">
+                            <a id="post8"> </a>
+                            <a class="photoPost8"> </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="feed9">
+                            <a id="post9"> </a>
+                            <a class="photoPost9"> </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="feed10">
+                            <a id="post10"> </a>
+                            <a class="photoPost10"> </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="row" id="goBackBtn">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <button class="btn btn-primary" type="button">Go Back</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+    <script type="text/javascript" src="assets/js/vanilla.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
